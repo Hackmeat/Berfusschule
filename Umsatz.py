@@ -1,4 +1,4 @@
-dauer = input("Gebe Dauer des Umsatzrückganges an: ")
+dauer = 5
 
 fi_umsatz = float(100000000) #100 Mio
 on_umsatz = float(30000000) # 30 Mio
@@ -6,10 +6,11 @@ on_umsatz = float(30000000) # 30 Mio
 fi_verlust = float(0.92)
 on_gewinn = float(1.1)
 
-for x in dauer:
+while(dauer > 0):
     fi_umsatz = fi_umsatz * fi_verlust
+    dauer -= 1
     
-print("\nUmsatz in Filale in " + str(dauer) + " Jahren liegt bei " + str(fi_umsatz))
+print("\nUmsatz in Filale in 5 Jahren liegt bei " + str(fi_umsatz))
 
 fi_umsatz = float(100000000) #100 Mio
 on_umsatz = float(30000000) # 30 Mio

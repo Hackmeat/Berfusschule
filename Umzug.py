@@ -1,3 +1,4 @@
+#moving costs
 input = float (input("Geben Sie Ihre Umzugskosten an: "))
 rabat = 0.15
 

@@ -51,7 +51,6 @@ def cal_Netto():
     else:
         noti_label.config(text="Keine Zahl!")
 
-
 #UI Objects
 noti_label = Label(window, text="Gebe Brutto ein!")
 info_label = Label(window, text="Brutto: ")

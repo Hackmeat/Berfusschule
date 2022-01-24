@@ -1,5 +1,5 @@
+#Income after 5 years
 dauer = 5
-
 fi_umsatz = float(100000000) #100 Mio
 on_umsatz = float(30000000) # 30 Mio
 
@@ -12,12 +12,11 @@ while(dauer > 0):
     
 print("\nUmsatz in Filale in 5 Jahren liegt bei " + str(fi_umsatz))
 
+#When online shop brings in more money
 fi_umsatz = float(100000000) #100 Mio
 on_umsatz = float(30000000) # 30 Mio
-
 fi_verlust = float(0.92)
 on_gewinn = float(1.1)
-
 dauer = 0
 
 while(fi_umsatz > on_umsatz):
@@ -27,12 +26,11 @@ while(fi_umsatz > on_umsatz):
     
 print("\nOnline Handel hat nach " + str(dauer) + " Jahren den Filal Handel überhollt!")
 
+#How much faster online shopping has to increase
 fi_umsatz = float(100000000) #100 Mio
 on_umsatz = float(30000000) # 30 Mio
-
 fi_verlust = float(0.92)
 on_gewinn = float(1.1)
-
 dauer = 5
 
 while(fi_umsatz > on_umsatz):

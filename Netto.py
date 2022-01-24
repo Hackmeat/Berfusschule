@@ -18,13 +18,11 @@ if brutto > 4000 and brutto <= 5000:
 if brutto > 5000:
     lohnsteuer = brutto / 100 * 35
 
-
 temp += lohnsteuer
 
 #Kirchensteuer und Soli abhängig von Lohnsteuer
 temp += lohnsteuer / 100 * 8
 temp += lohnsteuer / 100 * 5.5
-
 netto = brutto - temp
 
 #Output

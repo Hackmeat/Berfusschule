@@ -22,12 +22,16 @@ def setupViews():
 def checkNumber():
     num1 = entry1.get()
     num2 = entry2.get()
-    if (num1 != num2):
-        entry2.delete(0, END)
-        label3.config(text="Falsche Nummer")
-    else:
+    checkRadio1 = provider.get()
+    checkRadio2 = guthaben.get()
+    if ((num1 == num2) and (checkRadio1 > 0) and (checkRadio2 > 0)):
         label3.config(text="Erfolgreich")
-        
+    else:
+        if(num1 != num2):
+            entry2.delete(0, END)
+            label3.config(text="Falsche Nummer")
+        else:
+            label3.config(text="Falsche Auswahl")   
 
 root = Tk()
 

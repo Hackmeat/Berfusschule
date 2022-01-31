@@ -19,6 +19,7 @@ def setupViews():
     
     button1.grid(row=6, column=1)
     
+#Checking numbers
 def checkNumber():
     num1 = entry1.get()
     num2 = entry2.get()

@@ -12,3 +12,6 @@ Berechnung von Umzugskosten
 
 ## Umsatz
 Berchnung des Umsatzverlaufes von Filale und Online
+
+## Qualitaetsanalyse
+Berechnung eines Mittelwertes und ausgeben von starken Abweichungen

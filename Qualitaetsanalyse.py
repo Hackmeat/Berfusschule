@@ -6,7 +6,7 @@ sum = 0
 sumNoExtrem = 0
 base = 5
 
-#adding up all numbers and catch & print extrem values
+#Adding up all numbers and catch & print extrem values
 while i < len(values):
     sum += values[i]
     if values[i] > base * 1.01 or values[i] < base * 0.99:
@@ -16,8 +16,10 @@ while i < len(values):
         sumNoExtrem += values[i]
     i += 1
      
-#Get the avarage value and print   
+#Get the avarage value   
 sum = sum / len(values)
 sumNoExtrem = sumNoExtrem / (len(values) - len(extrems))
+
+#Print
 print("\nThe avg value of the values is: " + str(format(sum, ".3f")))
 print("Without the extrems the avg value is " + str(format(sumNoExtrem, ".3f")))

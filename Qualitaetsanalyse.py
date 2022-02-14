@@ -21,5 +21,5 @@ sum = sum / len(values)
 sumNoExtrem = sumNoExtrem / (len(values) - len(extrems))
 
 #Print
-print("\nThe avg value of the values is: " + str(format(sum, ".3f")))
-print("Without the extrems the avg value is " + str(format(sumNoExtrem, ".3f")))
+print("\nThe avg value of the values is: " + str(format(sum, ".2f")))
+print("Without the extrems the avg value is " + str(format(sumNoExtrem, ".2f")))

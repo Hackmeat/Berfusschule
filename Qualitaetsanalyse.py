@@ -39,27 +39,18 @@ def mess_Max():
         i += 1
     print("\nThe highest value is " + str(temp))
         
-def sort():
-    max = 0
-    temp = 0
-    i = 0
-    while i < len(values):
-        maxJ = 0
-        max = values[i]
+def sort():  
+    nocheck = False
+    while nocheck == False:
+        nocheck = True
         j = 0
-        while (j + i) < len(values):
-            print(str(max) + ", " + str(values[j]))
-            if(max < values[j]):
-                print("bigger")
-                max = values[j]
-                maxJ = j
-                
+        while (j + 1) < len(values): 
+            if values[j] > values[j + 1]:
+                temp = values[j]
+                values[j] = values[j + 1]
+                values[j + 1] = temp
+                nocheck = False      
             j += 1
-        temp = values[i]
-        values[i] = max
-        values[maxJ] = temp
-        i += 1
-        print("changed")
     print(values)
         
 #Call FUntions

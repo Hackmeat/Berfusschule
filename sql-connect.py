@@ -1,6 +1,6 @@
 import mysql.connector
 
-Servername = '127.0.0.1'  # Rechnername (localhost ist dein eigener Rechner)
+Servername = '127.0.0.1'
 Benutzer = 'root'
 Passwort = ''
 Datenbank = 'db_autoteile'
@@ -11,18 +11,13 @@ con = mysql.connector.connect(
     database=Datenbank,
     password=Passwort)
 
-
 def run_sql(sql):
     cursor = con.cursor()
-
-    SQLBefehl = sql
-    cursor.execute(SQLBefehl)
+    cursor.execute(sql)
     row = cursor.fetchone()
-
     while (row != None):
         print(row)
         row = cursor.fetchone()
-
 
 #1) all Aricles
 #run_sql('SELECT * FROM tbl_artikel')
@@ -53,3 +48,6 @@ def run_sql(sql):
 
 #10) all WarenTyp
 #run_sql('SELECT WarenTyp FROM tbl_artikel GROUP BY WarenTyp')
+
+#11) join of two tables
+run_sql('SELECT tbl_artikel.ArtikelNr, tbl_artikel.Artikelbezeichnung, tbl_lieferant.Firma FROM tbl_artikel LEFT JOIN tbl_lieferant on tbl_artikel.LieferantenNr = tbl_lieferant.LieferantenNr')

@@ -16,10 +16,10 @@ class Hotel():
         anfahrt = Datum(anTag, anMonat, anJahr)
         abfahrt = Datum(abTag, abMonat, abJahr)
         while (i < self.buchungList.length):
-            if (self.buchungList[i].zimmerid == zimmerid):
-                #if(self.buchungList[i].anreise.tag >= anTag or self.buchungList[i].abreise.tag )
-            i += 1
-        return status
+            #if (self.buchungList[i].zimmerid == zimmerid):
+            #    if(self.buchungList[i].anreise.tag >= anTag or self.buchungList[i].abreise.tag )
+            i = i + 1
+        #return status
         
     def neueBuchung(self, zimmerid, anTag, anMonat, anJahr, abTag, abMonat, abJahr):
         ankunft = Datum(anTag, anMonat, anJahr)
